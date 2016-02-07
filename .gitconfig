@@ -1,0 +1,5 @@
+[user]
+	email = afiskon@gmail.com
+	name = afiskon
+[core]
+	pager = less -S
