@@ -1,0 +1,7 @@
+XXkb.button.enable: no
+XXkb.mainwindow.enable: yes
+XXkb.mainwindow.type: tray
+XXkb.mainwindow.geometry: 15x15+0+0
+XXkb.image.path: /usr/local/share/xxkb/
+XXkb.mainwindow.image.1: en15.xpm
+XXkb.mainwindow.image.2: ru15.xpm

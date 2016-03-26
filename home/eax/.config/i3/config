@@ -112,3 +112,4 @@ bar {
 }
 
 # exec gxneur &
+exec xxkb &
