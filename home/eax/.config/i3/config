@@ -111,6 +111,7 @@ bar {
   status_command i3status
 }
 
-# exec gxneur &
 exec xxkb &
+exec intel_backlight 80 &
 exec /home/eax/bin/battery-notify &
+exec /home/eax/syncthing/run.sh &
