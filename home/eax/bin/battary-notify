@@ -1,0 +1,25 @@
+#!/usr/bin/env python3
+
+import subprocess
+import time
+import re
+
+threshold = 15 # percent
+sleep_time = 10 # seconds
+
+warning_shown = False
+
+while True:
+  batinfo = subprocess.check_output("acpiconf -i 0 2>&1", shell = True)
+  batinfo = batinfo.decode('utf-8')
+  m = re.search("""Remaining capacity:\s+(\d+)%""", batinfo)
+  capacity = int(m.group(1))
+
+  if capacity > threshold:
+    warning_shown = False
+  elif capacity <= threshold and not warning_shown:
+    subprocess.call("notify-send -u critical 'LOW BATTARY!!!'", shell = True)
+    warning_shown = True
+
+  print(capacity)
+  time.sleep(sleep_time)
