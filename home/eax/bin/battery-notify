@@ -21,5 +21,4 @@ while True:
     subprocess.call("notify-send -u critical 'LOW BATTARY!!!'", shell = True)
     warning_shown = True
 
-  print(capacity)
   time.sleep(sleep_time)
