@@ -113,3 +113,4 @@ bar {
 
 # exec gxneur &
 exec xxkb &
+exec /home/eax/bin/battery-notify &
