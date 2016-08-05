@@ -10,10 +10,22 @@ sleep_time = 10 # seconds
 warning_shown = False
 
 while True:
-  batinfo = subprocess.check_output("acpiconf -i 0 2>&1", shell = True)
-  batinfo = batinfo.decode('utf-8')
-  m = re.search("""Remaining capacity:\s+(\d+)%""", batinfo)
-  capacity = int(m.group(1))
+  capacity = 0
+  nbatteries = 0
+  batinfo = ""
+
+  while True:
+    cmd = "acpiconf -i {} 2>&1".format(nbatteries)
+    try:
+      batinfo = subprocess.check_output(cmd, shell = True)
+    except Exception as e:
+      break # no more batteries
+    batinfo = batinfo.decode('utf-8')
+    m = re.search("""Remaining capacity:\s+(\d+)%""", batinfo)
+    capacity += int(m.group(1))
+    nbatteries += 1
+
+  capacity = capacity / nbatteries
 
   if capacity > threshold:
     warning_shown = False
