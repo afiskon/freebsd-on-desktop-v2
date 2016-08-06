@@ -5,10 +5,6 @@ export EDITOR=vim
 eval "$(ssh-agent)"
 ssh-add
 
-# Touchpad on/off
-alias touchoff="sudo xinput set-prop 7 'Device Enabled' 0"
-alias touchon="sudo xinput set-prop 7 'Device Enabled' 1"
-
 alias setclip='xclip -selection c'
 alias getclip='xclip -selection clipboard -o'
 
