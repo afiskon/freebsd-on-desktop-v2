@@ -1,0 +1,7 @@
+#!/bin/sh
+
+fwcmd="ipfw -q add"
+
+ipfw -q -f flush
+
+$fwcmd 65000 allow ip from any to any
