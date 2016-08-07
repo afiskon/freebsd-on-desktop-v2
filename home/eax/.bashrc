@@ -5,6 +5,8 @@ export EDITOR=vim
 eval "$(ssh-agent)"
 ssh-add
 
+alias exit='clear && exit'
+
 alias setclip='xclip -selection c'
 alias getclip='xclip -selection clipboard -o'
 
