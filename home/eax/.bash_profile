@@ -22,6 +22,7 @@ export EDITOR=vim
 #export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 #source /usr/local/bin/virtualenvwrapper.sh
 
-alias www="lynx -display_charset=utf8 -dump"
+alias lynx="lynx -display_charset=utf8"
+alias www="lynx -dump"
 alias commitpush="git commit -am 'fix' ; git push origin HEAD"
 
