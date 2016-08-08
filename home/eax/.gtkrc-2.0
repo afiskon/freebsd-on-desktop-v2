@@ -1,0 +1,8 @@
+style "user-font"
+{
+#	font_name="Droid Sans Mono 12"
+	font_name="Ubuntu 12"
+}
+widget_class "*" style "user-font"
+# gtk-font-name = "Droid Sans Mono 12"
+gtk-font-name = "Ubuntu 12"
