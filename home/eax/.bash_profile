@@ -1,8 +1,8 @@
 export LANG=en_US.UTF-8
 
 # without these lines ssh-copy-id will not work
-eval "$(ssh-agent)"
-ssh-add
+#eval "$(ssh-agent)"
+#ssh-add
 
 # Message Of The Day
 alias advice="advice | cowsay"
