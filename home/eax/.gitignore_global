@@ -1,0 +1,8 @@
+check.sh
+dev-build.sh
+install-single.sh
+install.sh
+kill.sh
+prod-build.sh
+rsync.sh
+testcore.sh

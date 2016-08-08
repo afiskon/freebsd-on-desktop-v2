@@ -3,3 +3,8 @@
 	name = afiskon
 [core]
 	pager = less -S
+	excludesfile = /home/eax/.gitignore_global
+[merge]
+	tool = vimdiff
+[mergetool]
+	prompt = false
