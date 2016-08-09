@@ -1,0 +1,4 @@
+#!/bin/sh
+
+sysctl -a | grep temper
+
