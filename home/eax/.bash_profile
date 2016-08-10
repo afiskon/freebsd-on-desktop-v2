@@ -8,6 +8,7 @@ export LANG=en_US.UTF-8
 alias advice="advice | cowsay"
 advice
 
+alias suspend='/home/eax/bin/suspend'
 alias exit='clear && exit'
 
 alias setclip='xclip -selection c'
