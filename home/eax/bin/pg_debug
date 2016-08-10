@@ -15,6 +15,6 @@ pid = int(m.group(1))
 # cmd = """xdotool key ctrl+shift+t && xdotool type "gdb -p {}" && xdotool key Return""".format(pid)
 
 # i3wm version
-cmd = """i3-msg 'exec xfce4-terminal' && sleep 1 && xdotool type "lldb -p {}" && xdotool key Return""".format(pid)
+cmd = """i3-msg 'exec xfce4-terminal' && sleep 0.25 && xdotool type "lldb -p {}" && xdotool key Return""".format(pid)
 
 os.system(cmd)
