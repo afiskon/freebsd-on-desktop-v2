@@ -1,3 +1,3 @@
 #!/bin/sh
 
-sudo acpiconf -s 3
+sudo sh -c 'sudo -u eax i3lock -c 000000 & (sleep 1 && acpiconf -s 3)'
