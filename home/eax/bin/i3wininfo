@@ -1,0 +1,3 @@
+#!/bin/sh
+
+xwininfo -int | perl -le 'while(<>){ if(/Window id: (\d+)/) { print $1; break; } }' | xargs xprop -id | grep WM_CLASS
