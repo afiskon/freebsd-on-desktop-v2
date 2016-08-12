@@ -1,4 +1,6 @@
-\set PROMPT1 '%p =# '
+select (case when pg_is_in_recovery() then 'replica' else 'master' end) as master_or_replica
+\gset
+
+\set PROMPT1 '%p (%:master_or_replica:) =# '
 \set lldb 'SELECT pg_backend_pid() \\g |pg_debug'
 
-select 'CONNECTED TO ' || (case when pg_is_in_recovery() then 'REPLICA' else 'MASTER' end) as message;
