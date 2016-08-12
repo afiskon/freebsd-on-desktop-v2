@@ -121,8 +121,8 @@ bindsym $mod+Shift+KP_0 move container to workspace 10
 
 bindsym $mod+t border toggle
 
-# no border by default
-for_window [class="^.*"] border pixel 0
+# no border by default (looks weird)
+# for_window [class="^.*"] border pixel 0
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
