@@ -121,8 +121,12 @@ bindsym $mod+Shift+KP_0 move container to workspace 10
 
 bindsym $mod+t border toggle
 
-# no border by default (looks weird)
-# for_window [class="^.*"] border pixel 0
+# xwininfo -int | perl -le 'while(<>){ if(/Window id: (\d+)/) { print $1; break; } }' | xargs xprop -id | grep WM_CLASS
+# no border by default
+for_window [class="(?i)xfce4-terminal"] border pixel 0
+for_window [class="(?i)claws-mail"] border pixel 0
+for_window [class="(?i)chromium-browser"] border pixel 0
+for_window [class="(?i)hexchat"] border pixel 0
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
