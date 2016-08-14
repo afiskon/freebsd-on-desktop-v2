@@ -3,11 +3,18 @@
 import subprocess
 import time
 import re
+import os
 
 threshold = 15 # percent
 sleep_time = 10 # seconds
 
 warning_shown = False
+
+# Kill old instances
+mypid = os.getpid()
+cmd = "(ps ax | grep battery-notify | perl -lne '/^\s*(\d+)/; print $1' | grep -v {} | xargs kill 2>/dev/null) || true"
+
+subprocess.call(cmd.format(mypid), shell = True)
 
 while True:
   capacity = 0
