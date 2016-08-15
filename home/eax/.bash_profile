@@ -1,5 +1,8 @@
 export LANG=en_US.UTF-8
 
+# fix Terminal title
+export PS1="\[\e]0;\u@\h \w\a\]$PS1"
+
 # without these lines ssh-copy-id will not work
 #eval "$(ssh-agent)"
 #ssh-add
