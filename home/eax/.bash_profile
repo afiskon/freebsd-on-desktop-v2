@@ -29,5 +29,6 @@ export EDITOR=vim
 
 alias lynx="lynx -display_charset=utf8"
 alias www="lynx -dump"
+alias gitlog='git log --pretty=format:"%h  %ai  %an <%ae>  %s"'
 alias commitpush="git commit -am 'fix' ; git push origin HEAD"
 
