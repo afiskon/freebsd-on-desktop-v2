@@ -11,6 +11,8 @@ export PS1="\[\e]0;\u@\h \w\a\]$PS1"
 alias advice="advice | cowsay"
 advice
 
+(ifconfig lo0 | grep 127.0.0.1 >/dev/null) || echo ">>> Check lo0 aliases! <<<"
+
 alias psql='psql_wrapper'
 alias suspend='/home/eax/bin/suspend'
 alias exit='clear && exit'
