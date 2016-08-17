@@ -142,6 +142,7 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 bar {
   position top
   status_command i3status
+  tray_output primary
 }
 
 exec xxkb &
