@@ -1,3 +1,8 @@
+
+# Use bash-completion, if available
+[[ $PS1 && -f /usr/local/share/bash-completion/bash_completion.sh ]] && \
+	source /usr/local/share/bash-completion/bash_completion.sh
+
 export LANG=en_US.UTF-8
 
 # fix Terminal title
