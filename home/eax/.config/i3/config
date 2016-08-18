@@ -124,13 +124,13 @@ bindsym $mod+t border toggle
 # xwininfo -int | perl -le 'while(<>){ if(/Window id: (\d+)/) { print $1; break; } }' | xargs xprop -id | grep WM_CLASS
 # no border by default
 for_window [class="(?i)xfce4-terminal"] border pixel 0
-for_window [class="(?i)claws-mail"] border pixel 0
-for_window [class="(?i)hexchat"] border pixel 0
+# for_window [class="(?i)claws-mail"] border pixel 0
 # for_window [class="(?i)chromium-browser"] border pixel 0
 
-for_window [class="(?i)chromium-browser"] floating enable move right 150px, move down 150px # for pop-up windows like Share in Twitter
+for_window [class="(?i)chromium-browser"] floating enable move right 50px, move down 50px # for pop-up windows like Share in Twitter
 for_window [class="(?i)virtualbox"] floating enable
 for_window [class="(?i)gimp"] floating enable
+for_window [class="(?i)claws-mail"] floating enable
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
