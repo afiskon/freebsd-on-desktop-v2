@@ -1,0 +1,37 @@
+# shift+g = fetch new email
+bind index "G" imap-fetch-mail
+
+# enable threads
+set sort=threads
+
+# messages from me
+color index yellow default "~P"
+
+# old unread messages
+color index green default "~O"
+
+# new unread messages
+color index brightgreen default "~N"
+
+# tagged messages
+color index red default "~T"
+
+# messages about to be deleted
+color index brightyellow default "~D"
+
+# message displaying settings
+color hdrdefault green default
+color header brightgreen default ^Subject:
+color quoted cyan default
+color signature red default
+
+# default account
+source ~/.mutt/default
+
+# switching between accounts
+macro index <f2> '<sync-mailbox><enter-command>source ~/.muttrc<enter><change-folder>!<enter>'
+macro index <f3> '<sync-mailbox><enter-command>source ~/.mutt/devzen<enter><change-folder>!<enter>'
+macro index <f4> '<sync-mailbox><enter-command>source ~/.mutt/pgpro<enter><change-folder>!<enter>'
+
+# address book
+source ~/.mutt/contacts
