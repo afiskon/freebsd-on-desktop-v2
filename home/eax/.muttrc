@@ -4,9 +4,6 @@ bind index "G" imap-fetch-mail
 # enable threads
 set sort=threads
 
-# messages from me
-color index yellow default "~P"
-
 # old unread messages
 color index green default "~O"
 
@@ -19,11 +16,29 @@ color index red default "~T"
 # messages about to be deleted
 color index brightyellow default "~D"
 
+# messages to me
+color index cyan default "~p"
+color index brightcyan default "~p~O"
+color index brightcyan default "~p~N"
+
+# messages from me
+color index yellow default "~P"
+
 # message displaying settings
 color hdrdefault green default
 color header brightgreen default ^Subject:
 color quoted cyan default
 color signature red default
+
+# scroll message line by line using arraws
+bind pager <up> previous-line
+bind pager <down> next-line
+
+# smart word-wrap
+set smart_wrap
+
+# disable artifitial pauses
+set sleep_time = 0
 
 # default account
 source ~/.mutt/default
