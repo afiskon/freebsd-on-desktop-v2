@@ -5,7 +5,7 @@ import time
 import re
 import os
 
-threshold = 15 # percent
+threshold = 5 # percent
 sleep_time = 10 # seconds
 
 warning_shown = False
