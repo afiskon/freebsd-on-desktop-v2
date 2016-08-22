@@ -42,17 +42,13 @@ bindsym $mod+d exec dmenu_run
 # installed.
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
-#bindsym $mod+Left focus left
-#bindsym $mod+Down focus down
-#bindsym $mod+Up focus up
-#bindsym $mod+Right focus right
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
 
-bindsym $mod+Up focus left
-bindsym $mod+Down focus right
-
-bindsym $mod+Left workspace prev
-bindsym $mod+Right workspace next
-
+bindsym $mod+p workspace next
+bindsym $mod+o workspace prev
 bindsym $mod+m move workspace to output left
 
 bindsym $mod+Shift+Left move left
@@ -135,7 +131,7 @@ for_window [class="(?i)xfce4-terminal"] border pixel 0
 # for_window [class="(?i)claws-mail"] border pixel 0
 # for_window [class="(?i)chromium-browser"] border pixel 0
 
-for_window [class="(?i)chromium-browser"] floating enable move right 50px, move down 50px # for pop-up windows like Share in Twitter
+for_window [class="(?i)chromium-browser"] floating enable move right 50px, move down 50px
 for_window [class="(?i)virtualbox"] floating enable
 for_window [class="(?i)gimp"] floating enable
 for_window [class="(?i)claws-mail"] floating enable
