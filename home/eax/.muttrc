@@ -5,8 +5,8 @@ bind index "G" imap-fetch-mail
 set sort=threads
 
 # enable caching
-set header_cache="~/.mutt/header_cache"
-set message_cachedir="~/.mutt/message_cache"
+#set header_cache="~/.mutt/header_cache"
+#set message_cachedir="~/.mutt/message_cache"
 
 # old unread messages
 color index green default "~O"
