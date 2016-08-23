@@ -34,7 +34,7 @@ color header brightgreen default ^Subject:
 color quoted cyan default
 color signature red default
 
-macro pager \cb <pipe-entry>'urlview'<enter> 'Follow links with urlview'
+macro pager \cb <pipe-entry>'urlscan'<enter> 'Follow links with urlscan'
 
 # scroll message line by line using arraws
 bind pager <up> previous-line
