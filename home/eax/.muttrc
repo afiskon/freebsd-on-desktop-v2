@@ -40,7 +40,7 @@ auto_view text/html
 alternative_order text/plain text/html
 macro attach 'V' "<pipe-entry>cat >~/temp/email.html && $BROWSER ~/temp/email.html<enter>"
 
-macro pager \cb <pipe-entry>'urlscan'<enter> 'Follow links with urlscan'
+macro pager \cb <pipe-entry>'urlscan -c'<enter> 'Follow links with urlscan'
 
 # scroll index line by line instead of page by page
 set menu_scroll
