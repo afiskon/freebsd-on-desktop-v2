@@ -1,0 +1,8 @@
+#!/bin/sh
+
+echo '---- pkg ----'
+pkg info
+
+echo ''
+echo '---- pip ----'
+pip list
