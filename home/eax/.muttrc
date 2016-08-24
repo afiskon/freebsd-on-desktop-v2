@@ -36,6 +36,9 @@ color signature red default
 
 macro pager \cb <pipe-entry>'urlscan'<enter> 'Follow links with urlscan'
 
+# scroll index line by line instead of page by page
+set menu_scroll
+
 # scroll message line by line using arraws
 bind pager <up> previous-line
 bind pager <down> next-line
