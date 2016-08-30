@@ -1,3 +1,0 @@
-#!/bin/sh
-
-sudo sysctl dev.cpu.0.freq=2200
