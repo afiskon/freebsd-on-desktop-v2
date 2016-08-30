@@ -1,0 +1,6 @@
+#!/bin/sh
+
+set -e 
+
+sudo service netif onestop
+sudo service netif onestart
