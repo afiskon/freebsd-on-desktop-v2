@@ -1,4 +1,5 @@
 -- \set PROMPT1 '%p <%`sh -c "psql $USER_ARGS -A -t -c $\'select case when pg_is_in_recovery() then \\\'replica\\\' else \\\'master\\\' end\'"`> =# '
+\timing on
 
 select (case when pg_is_in_recovery() then 'replica' else 'master' end) as master_or_replica
 \gset
