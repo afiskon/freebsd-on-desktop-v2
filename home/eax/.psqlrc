@@ -5,4 +5,4 @@ select (case when pg_is_in_recovery() then 'replica' else 'master' end) as maste
 \gset
 
 \set PROMPT1 '%p (%:master_or_replica:) =# '
-\set lldb 'SELECT pg_backend_pid() \\g |pg_debug'
+\set dbg 'SELECT pg_backend_pid() \\g |pg_debug'
