@@ -1,0 +1,4 @@
+#!/bin/sh
+
+set -e
+sudo sysctl hw.snd.default_unit=0

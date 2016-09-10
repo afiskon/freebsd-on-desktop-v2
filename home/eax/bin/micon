@@ -1,0 +1,5 @@
+#!/bin/sh
+
+set -e
+cat /dev/sndstat
+sudo sysctl hw.snd.default_unit=5
