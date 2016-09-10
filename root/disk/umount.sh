@@ -2,6 +2,7 @@
 
 set -e
 
+killall -9 -u eax
 umount /home/eax
 rm -r /home/eax
 geli detach md0.eli
