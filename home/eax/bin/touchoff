@@ -1,3 +1,4 @@
 #!/bin/sh
 
-xinput set-prop 7 'Device Enabled' 0
+# xinput set-prop 7 'Device Enabled' 0
+sysctl hw.psm.synaptics.touchpad_off=1
