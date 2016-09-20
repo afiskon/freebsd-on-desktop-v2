@@ -5,11 +5,17 @@
 
 export LANG=en_US.UTF-8
 
-# fix Terminal title
+# fix Terminal title (bash only)
 export PS1="\[\e]0;\u@\h \w\a\]$PS1"
 
 # for urlscan
 export BROWSER=/usr/local/bin/chrome
+
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
+source /usr/local/bin/virtualenvwrapper.sh
+
+# for `go build`
+export GOPATH=/home/eax/gopath
 
 # without these lines ssh-copy-id will not work
 #eval "$(ssh-agent)"
@@ -39,6 +45,5 @@ export EDITOR=vim
 
 alias lynx="lynx -display_charset=utf8"
 alias www="lynx -dump"
-alias gitlog='git log --pretty=format:"%h  %ai  %an <%ae>  %s"'
+alias gitlog='git log --graph --pretty=format:"%h  %ai  %an <%ae>  %s"'
 alias commitpush="git commit -am 'fix' ; git push origin HEAD"
-
