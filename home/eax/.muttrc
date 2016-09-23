@@ -57,12 +57,12 @@ set smart_wrap
 set sleep_time = 0
 
 # default account
-source ~/.mutt/default
+# source ~/.mutt/default
 
 # switching between accounts
-macro index <f2> '<sync-mailbox><enter-command>source ~/.muttrc<enter><change-folder>!<enter>'
-macro index <f3> '<sync-mailbox><enter-command>source ~/.mutt/devzen<enter><change-folder>!<enter>'
-macro index <f4> '<sync-mailbox><enter-command>source ~/.mutt/pgpro<enter><change-folder>!<enter>'
+#macro index <f2> '<sync-mailbox><enter-command>source ~/.mutt/default<enter><change-folder>!<enter>'
+#macro index <f3> '<sync-mailbox><enter-command>source ~/.mutt/devzen<enter><change-folder>!<enter>'
+#macro index <f4> '<sync-mailbox><enter-command>source ~/.mutt/pgpro<enter><change-folder>!<enter>'
 
 # address book
 source ~/.mutt/contacts

@@ -2,7 +2,7 @@
 
 set -e
 
-mdconfig -a -t vnode -f disk.img -u 0
+mdconfig -a -t vnode -f /root/disk/disk.img -u 0
 geli attach /dev/md0
 fsck -C -t ufs -y /dev/md0.eli
 mkdir /home/eax || true

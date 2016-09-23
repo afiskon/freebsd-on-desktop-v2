@@ -15,7 +15,7 @@ export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
 source /usr/local/bin/virtualenvwrapper.sh
 
 # for `go build`
-export GOPATH=/home/eax/gopath
+# export GOPATH=/home/eax/gopath
 
 # without these lines ssh-copy-id will not work
 #eval "$(ssh-agent)"
@@ -26,6 +26,10 @@ alias advice="advice | cowsay"
 advice
 
 (ifconfig lo0 | grep 127.0.0.1 >/dev/null) || echo ">>> Check lo0 aliases! <<<"
+
+alias mail_eaxme='mutt -e "source ~/.mutt/eaxme"'
+alias mail_devzen='mutt -e "source ~/.mutt/devzen"'
+alias mail_pgpro='mutt -e "source ~/.mutt/pgpro"'
 
 alias psql='psql_wrapper'
 alias suspend='/home/eax/bin/suspend'
